@@ -1,0 +1,30 @@
+
+nav {
+    flex: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 20px;
+    padding: 1rem;
+    white-space: nowrap;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  section {
+    padding: 20px;
+    margin: 20px 0;
+  }
