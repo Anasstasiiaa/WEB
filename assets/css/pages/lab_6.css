@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#pokemon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(3) rotate(0deg);
+    /* Збільшення покемона у 5 разів та початкова позиція без обертання */
+    z-index: 1;
+    animation: zoomAndRotate 5s infinite linear;
+    /* Додана анімація обертання та зміни розмірів */
+}
+
+@keyframes zoomAndRotate {
+    0% {
+        transform: translate(-50%, -50%) scale(3) rotate(0deg);
+        /* Початкова позиція без обертання */
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1) rotate(180deg);
+        /* Зменшення та обертання на 180 градусів проти часової стрілки */
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(3) rotate(360deg);
+        /* Збільшення та повернення на 360 градусів проти часової стрілки */
+    }
+}
