@@ -3,30 +3,193 @@ body {
     overflow: hidden;
 }
 
+#space {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #000000, #000033, #000066, #000099, #0000CC, #0000FF);
+    animation: changeSpace 20s infinite linear;
+}
+
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+}
+
+#star1 {
+    top: 20%;
+    left: 10%;
+    width: 8px;
+    height: 8px;
+}
+
+#star2 {
+    top: 35%;
+    left: 15%;
+    width: 11px;
+    height: 11px;
+}
+
+#star3 {
+    top: 20%;
+    left: 47%;
+    width: 9px;
+    height: 9px;
+}
+
+#star4 {
+    top: 13%;
+    left: 62%;
+    width: 5px;
+    height: 5px;
+}
+
+#star5 {
+    top: 23%;
+    left: 33%;
+    width: 15px;
+    height: 15px;
+}
+
+#star6 {
+    top: 37%;
+    left: 25%;
+    width: 9px;
+    height: 9px;
+}
+
+#star7 {
+    top: 47%;
+    left: 95%;
+    width: 15px;
+    height: 15px;
+}
+
+#star8 {
+    top: 70%;
+    left: 92%;
+    width: 11px;
+    height: 11px;
+}
+
+#star9 {
+    top: 32%;
+    left: 85%;
+    width: 12px;
+    height: 12px;
+}
+
+#star10 {
+    top: 15%;
+    left: 60%;
+    width: 16px;
+    height: 16px;
+}
+
+#star11 {
+    top: 46%;
+    left: 80%;
+    width: 8px;
+    height: 8px;
+}
+
+#star12 {
+    top: 50%;
+    left: 78%;
+    width: 7px;
+    height: 7px;
+}
+
+#star13 {
+    top: 20%;
+    left: 70%;
+    width: 8px;
+    height: 8px;
+}
+
+#star14 {
+    top: 49%;
+    left: 74%;
+    width: 8px;
+    height: 8px;
+}
+
+#star15 {
+    top: 76%;
+    left: 86%;
+    width: 8px;
+    height: 8px;
+}
+
+#star16 {
+    top: 80%;
+    left: 86%;
+    width: 5px;
+    height: 5px;
+}
+
+#star17 {
+    top: 65%;
+    left: 7%;
+    width: 18px;
+    height: 18px;
+}
+
+#star18 {
+    top: 75%;
+    left: 32%;
+    width: 6px;
+    height: 6px;
+}
+
+#star19 {
+    top: 83%;
+    left: 28%;
+    width: 17px;
+    height: 17px;
+}
+
+#star20 {
+    top: 53%;
+    left: 16%;
+    width: 8px;
+    height: 8px;
+}
+
 #pokemon {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(3) rotate(0deg);
-    /* Збільшення покемона у 5 разів та початкова позиція без обертання */
+    transform: translate(-50%, -50%) scale(5) rotate(0deg);
     z-index: 1;
     animation: zoomAndRotate 5s infinite linear;
-    /* Додана анімація обертання та зміни розмірів */
+}
+
+@keyframes changeSpace {
+
+    0%,
+    100% {
+        background: linear-gradient(to bottom, #000000, #000033, #000066, #000099, #0000CC, #0000FF);
+    }
+
+    50% {
+        background: linear-gradient(to bottom, #000033, #000066, #000099, #0000CC, #0000FF, #000033);
+    }
 }
 
 @keyframes zoomAndRotate {
     0% {
         transform: translate(-50%, -50%) scale(3) rotate(0deg);
-        /* Початкова позиція без обертання */
     }
 
     50% {
         transform: translate(-50%, -50%) scale(1) rotate(180deg);
-        /* Зменшення та обертання на 180 градусів проти часової стрілки */
     }
 
     100% {
         transform: translate(-50%, -50%) scale(3) rotate(360deg);
-        /* Збільшення та повернення на 360 градусів проти часової стрілки */
     }
 }
