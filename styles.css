@@ -62,8 +62,38 @@ footer {
   text-align: center;
 }
 
+#labs h2 {
+  color: white;
+}
 
+#labs ul li {
+  background-color: lightblue;
+  padding: 20px;
+  margin: 20px 15px;
+  display: inline-block;
+  transition: all 0.1s ease;
+}
 
+#labs ul li:hover {
+  transform: scale(1.1);
+}
+
+.lab-description {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: cyan;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Verdana', sans-serif;
+}
+
+#labs ul li:hover .lab-description {
+  display: block;
+  transform: scale(1.1);
+}
 
 
 
