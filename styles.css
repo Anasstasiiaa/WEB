@@ -95,7 +95,38 @@ footer {
   transform: scale(1.1);
 }
 
+#practical h2 {
+  color: white;
+}
 
+#practical ul li {
+  background-color: lightblue;
+  padding: 20px;
+  margin: 20px 15px;
+  display: inline-block;
+  transition: all 0.1s ease;
+}
+
+#practical ul li:hover {
+  transform: scale(1.1);
+}
+
+.pract-description {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: cyan;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Verdana', sans-serif;
+}
+
+#practical ul li:hover .pract-description {
+  display: block;
+  transform: scale(1.1);
+}
 
 
 
