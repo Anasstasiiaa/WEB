@@ -1,5 +1,6 @@
-#labs h2 {
-  color: white;
+#labs ul {
+  padding: 0;
+  list-style: none;
 }
 
 #labs ul li {
@@ -7,11 +8,8 @@
   padding: 20px;
   margin: 20px 15px;
   display: inline-block;
-  transition: all 0.1s ease;
-}
-
-#labs ul li:hover {
-  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  /* Повернемо анімацію тут */
 }
 
 .lab-description {
@@ -26,13 +24,20 @@
   font-family: 'Verdana', sans-serif;
 }
 
+#labs ul li:hover {
+  transform: scale(1.1);
+}
+
 #labs ul li:hover .lab-description {
   display: block;
   transform: scale(1.1);
 }
 
+/* Додано медіа-запит для екранів шириною до 600px (типово для мобільних пристроїв) */
 @media only screen and (max-width: 600px) {
-  body {
-    overflow-y: auto;
+  #labs ul li {
+    width: calc(100% - 30px);
+    margin: 20px 0;
+    display: block;
   }
 }
