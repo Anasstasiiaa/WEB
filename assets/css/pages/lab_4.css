@@ -52,33 +52,29 @@ h1 {
     border-top: none;
     border-left: none;
     border-right: none;
-
-
 }
 
 #rocked-it {
-    grid-column: 5 / 6;
+    display: grid;
+    grid-column: 5 / 5;
     grid-row: 1 / 2;
     justify-content: end;
     margin-top: 20px;
-    margin-left: 120px;
-    /* Додано margin-left */
 }
 
 #room-for-improvement {
-    grid-column: 5 / 6;
+    display: grid;
+    grid-column: 5 / 5;
     grid-row: 3 / 4;
     justify-content: end;
 }
-
-
 
 
 #weekly-plan,
 #week-of,
 #healthy-habit,
 #room-for-improvement {
-    margin-top: -10px;
+    margin-top: -15px;
 }
 
 #to_do h5 {
